@@ -3,53 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Information</title>
+    <title>Explore Cars</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Navigation -->
     <header>
-        <h1>Car Information Hub</h1>
+        <h1>Explore Cars</h1>
         <nav>
             <a href="#home">Home</a>
-            <a href="#cars">Cars</a>
+            <a href="#popular">Popular Cars</a>
+            <a href="#brands">Brands</a>
+            <a href="#gallery">Gallery</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <h2>Welcome to Car Info Hub</h2>
-        <p>Your one-stop destination for car specifications and details.</p>
-        <button onclick="scrollToCars()">Explore Cars</button>
+        <div class="hero-text">
+            <h2>Discover the World of Cars</h2>
+            <p>High-performance machines, luxury sedans, supercars, and more.</p>
+            <button onclick="scrollToSection('popular')">Start Exploring</button>
+        </div>
     </section>
 
-    <section id="cars" class="cars-section">
+    <!-- Popular Cars -->
+    <section id="popular" class="section">
         <h2>Popular Cars</h2>
 
-        <div class="car-card">
-            <img src="https://via.placeholder.com/350x200" alt="Car 1">
-            <h3>BMW M4</h3>
-            <p>High performance coupe with a twin-turbo inline-6 engine.</p>
-        </div>
+        <div class="card-container">
 
-        <div class="car-card">
-            <img src="https://via.placeholder.com/350x200" alt="Car 2">
-            <h3>Audi R8</h3>
-            <p>A powerful supercar with a naturally aspirated V10 engine.</p>
-        </div>
+            <div class="car-card">
+                <img src="https://i.imgur.com/VqHh1aR.jpg" alt="BMW M4">
+                <h3>BMW M4</h3>
+                <p>A high-performance coupe with thrilling power and precision handling.</p>
+            </div>
 
-        <div class="car-card">
-            <img src="https://via.placeholder.com/350x200" alt="Car 3">
-            <h3>Mercedes AMG GT</h3>
-            <p>Luxury sports car with dynamic performance and style.</p>
-        </div>
+            <div class="car-card">
+                <img src="https://i.imgur.com/kYvPZBZ.jpg" alt="Audi R8">
+                <h3>Audi R8</h3>
+                <p>Supercar with a roaring V10 engine and breathtaking speed.</p>
+            </div>
 
+            <div class="car-card">
+                <img src="https://i.imgur.com/ITRX1xP.jpg" alt="Mercedes AMG GT">
+                <h3>Mercedes AMG GT</h3>
+                <p>Luxury performance car with a sleek profile and turbocharged power.</p>
+            </div>
+
+            <div class="car-card">
+                <img src="https://i.imgur.com/1WmYQmd.jpg" alt="Nissan GTR">
+                <h3>Nissan GTR</h3>
+                <p>The “Godzilla” supercar known for insane acceleration and AWD traction.</p>
+            </div>
+
+        </div>
     </section>
 
+    <!-- Brands Section -->
+    <section id="brands" class="section dark">
+        <h2>Car Brands</h2>
+
+        <div class="brand-container">
+
+            <div class="brand-card">
+                <img src="https://i.imgur.com/kSjqMA2.png" alt="BMW Logo">
+                <p>BMW</p>
+            </div>
+
+            <div class="brand-card">
+                <img src="https://i.imgur.com/b4bR579.png" alt="Audi Logo">
+                <p>Audi</p>
+            </div>
+
+            <div class="brand-card">
+                <img src="https://i.imgur.com/dYlpzSj.png" alt="Mercedes Logo">
+                <p>Mercedes</p>
+            </div>
+
+            <div class="brand-card">
+                <img src="https://i.imgur.com/RtUT2xu.png" alt="Lamborghini Logo">
+                <p>Lamborghini</p>
+            </div>
+
+            <div class="brand-card">
+                <img src="https://i.imgur.com/3spsE8O.png" alt="Ferrari Logo">
+                <p>Ferrari</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section">
+        <h2>Car Gallery</h2>
+
+        <div class="gallery-grid">
+
+            <img src="https://i.imgur.com/W2eZwHj.jpg" alt="Car 1">
+            <img src="https://i.imgur.com/dv1OB3J.jpg" alt="Car 2">
+            <img src="https://i.imgur.com/nYgwiex.jpg" alt="Car 3">
+            <img src="https://i.imgur.com/RS8Hv9M.jpg" alt="Car 4">
+            <img src="https://i.imgur.com/fpVxtzz.jpg" alt="Car 5">
+            <img src="https://i.imgur.com/kUcUQfJ.jpg" alt="Car 6">
+
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer id="contact">
         <h3>Contact Us</h3>
-        <p>Email: info@carhub.com</p>
-        <p>© 2025 Car Information Hub</p>
+        <p>Email: explorecars@info.com</p>
+        <p>© 2025 Explore Cars</p>
     </footer>
 
     <script src="script.js"></script>
