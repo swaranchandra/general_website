@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    background: #f4f4f4;
+    background: #f5f5f5;
     color: #333;
 }
 
@@ -18,6 +18,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav a {
@@ -31,56 +34,116 @@ header nav a:hover {
     color: #ffa31a;
 }
 
-/* Hero section */
+/* Hero Section */
 .hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: url("https://via.placeholder.com/1200x500") center/cover no-repeat;
+    background: url("https://i.imgur.com/mQ2z9Ez.jpg") center/cover no-repeat;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    text-align: center;
 }
 
-.hero button {
-    padding: 10px 20px;
+.hero-text button {
+    padding: 10px 25px;
+    font-size: 18px;
+    border: none;
     margin-top: 20px;
     background: #ffa31a;
-    border: none;
     cursor: pointer;
-    font-size: 18px;
     border-radius: 5px;
 }
 
-.hero button:hover {
+.hero-text button:hover {
     background: #e69500;
 }
 
-/* Cars section */
-.cars-section {
-    padding: 50px 20px;
+/* Section */
+.section {
+    padding: 50px 40px;
     text-align: center;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .car-card {
     background: white;
-    padding: 20px;
-    width: 300px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 260px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
 }
 
 .car-card img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
-.car-card h3 {
-    margin-top: 10px;
+/* Brands Section */
+.dark {
+    background: #222;
+    color: white;
 }
 
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brand-card {
+    background: #333;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.brand-card:hover {
+    background: #444;
+}
+
+.brand-card img {
+    width: 80px;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
 footer {
     background: #111;
     color: white;
+    padding: 30px;
     text-align: center;
-    padding: 20px;
     margin-top: 40px;
 }
