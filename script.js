@@ -1,5 +1,5 @@
-function scrollToCars() {
-    document.getElementById("cars").scrollIntoView({
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
         behavior: "smooth"
     });
 }
